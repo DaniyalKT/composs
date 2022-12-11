@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./collection-home.component.css']
 })
 export class CollectionHomeComponent {
-
 }

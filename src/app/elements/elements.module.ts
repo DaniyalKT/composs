@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ElementHomeComponent } from './element-home/element-home.component';
+import { ElementRoutingModule } from './element-routing.module';
 
 
 
@@ -9,8 +10,8 @@ import { ElementHomeComponent } from './element-home/element-home.component';
     ElementHomeComponent
   ],
   imports: [
-    CommonModule
-  ],
-  exports: [ElementHomeComponent]
+    CommonModule,
+    ElementRoutingModule
+  ]
 })
 export class ElementsModule { }
