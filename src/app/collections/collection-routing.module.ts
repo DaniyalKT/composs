@@ -3,11 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { CollectionHomeComponent } from './collection-home/collection-home.component';
 
 const routes: Routes = [
-    {path: 'collection', component: CollectionHomeComponent}
+    {path: '', component: CollectionHomeComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class CollectionRoutingModule { }
