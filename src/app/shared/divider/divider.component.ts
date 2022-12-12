@@ -6,5 +6,4 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./divider.component.css']
 })
 export class DividerComponent {
-@Input() dividerTitle = ''
 }

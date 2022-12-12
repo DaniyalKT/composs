@@ -5,6 +5,7 @@ import { ElementRoutingModule } from './element-routing.module';
 import { PlaceHolderComponent } from './place-holder/place-holder.component';
 import { RepeatTemplateDirective } from './repeat-template.directive';
 import { SharedModule } from '../shared/shared.module';
+import { SegmentComponent } from './segment/segment.component';
 
 
 
@@ -12,7 +13,8 @@ import { SharedModule } from '../shared/shared.module';
   declarations: [
     ElementHomeComponent,
     PlaceHolderComponent,
-    RepeatTemplateDirective
+    RepeatTemplateDirective,
+    SegmentComponent
   ],
   imports: [
     CommonModule,
