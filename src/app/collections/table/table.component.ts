@@ -10,11 +10,4 @@ export class TableComponent {
 @Input() header: any[] = [] 
 @Input() className = 'basic'
 
-constructor(){
-  const result = 'hello'
-
-
-  result //? 
-}
-
 }

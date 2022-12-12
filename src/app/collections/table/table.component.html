@@ -8,8 +8,8 @@
     </thead>
     <tbody>
       <tr *ngFor="let item of data">
-        <ng-container *ngFor="let headeritem of header">
-        <td *ngIf="headeritem.show">{{item[headeritem.key]}}</td>
+        <ng-container *ngFor="let header of header">
+        <td *ngIf="header.show">{{item[header.key]}}</td>
     </ng-container>
       </tr>
 
