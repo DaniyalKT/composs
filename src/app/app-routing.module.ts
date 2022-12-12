@@ -12,6 +12,14 @@ const routes: Routes = [
     path: 'collection', loadChildren: () => import('./collections/collections.module')
       .then(x => x.CollectionsModule)
   },
+  {
+    path: 'mods', loadChildren: () => import('./mods/mods.module')
+      .then(m => m.ModsModule)
+  },
+  {
+    path: 'views', loadChildren: () => import('./views/views.module')
+      .then(m => m.ViewsModule)
+  },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'not-found', component: NotFoundComponent },

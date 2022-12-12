@@ -1,0 +1,18 @@
+.segment {
+    text-align: center;
+}
+
+.icon {
+    margin-top: 50px;
+    font-size: 3cm;
+}
+
+.header {
+    font-size: 2cm !important;
+    margin-top: -40px;
+}
+
+p {
+    font-weight: bolder;
+    font-size: larger;
+}
