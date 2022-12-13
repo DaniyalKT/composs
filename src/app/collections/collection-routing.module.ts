@@ -9,8 +9,7 @@ const routes: Routes = [
   {
     path: '', component: CollectionHomeComponent,
     children: [
-      { path: '', redirectTo: 'bio', pathMatch: 'full' },
-      {path: 'bio' , component: BiographComponent},
+      {path: '' , component: BiographComponent},
       {path:'companies', component:CompaniesComponent},
       {path:'partners', component:PartnersComponent}
     ]
