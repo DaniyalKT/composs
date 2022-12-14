@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./collection-home.component.css']
 })
 export class CollectionHomeComponent {
+
+  
   data = [
     { name: 'ali', age: 30, job: 'designer', employed: true },
     {name:'danial' , age:25, job:'web developer' , employed: true},

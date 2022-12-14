@@ -1,17 +1,21 @@
-<table class="ui table" [ngClass]="className">
-    <thead>
-      <tr>
-       <ng-container *ngFor="let headitem of header">
-        <th *ngIf="headitem.show">{{headitem.value}}</th>
-    </ng-container>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of data">
-        <ng-container *ngFor="let header of header">
-        <td *ngIf="header.show">{{item[header.key]}}</td>
-    </ng-container>
-      </tr>
+<select class="ui compact selection dropdown">
+  <option  *ngFor="let item of classNameData; let i = index" (change)="onChangeClassName(i)"> {{item.name}} </option>
 
-    </tbody>
-  </table>
+</select>
+<table class="ui table" [ngClass]="className">
+  <thead>
+    <tr>
+      <ng-container *ngFor="let headitem of header">
+        <th *ngIf="headitem.show">{{headitem.value}}</th>
+      </ng-container>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of data">
+      <ng-container *ngFor="let header of header">
+        <td *ngIf="header.show">{{item[header.key]}}</td>
+      </ng-container>
+    </tr>
+
+  </tbody>
+</table>
