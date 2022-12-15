@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, OnDestroy, Output, EventEmitter } from '@angular/core';
+import { Component, ElementRef, OnInit, OnDestroy, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-modal',
@@ -7,7 +7,9 @@ import { Component, ElementRef, OnInit, OnDestroy, Output, EventEmitter } from '
 })
 export class ModalComponent implements OnInit, OnDestroy {
   @Output() onClose =new  EventEmitter()
-  
+  @Input() isExistFooter: boolean = true
+  @Input() defaultButton: boolean = true
+  @Input() newButton:boolean = false
   constructor( private el: ElementRef){}
 
   

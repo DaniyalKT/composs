@@ -1,4 +1,14 @@
 <app-divider>Modal</app-divider>
 
+
 <button class="ui green button" (click)="ngChangeModal()">Show Modal</button>
-<app-modal *ngIf="showModal" (onClose)="ngChangeModal()"></app-modal>
+<app-modal *ngIf="showModal" (onClose)="ngChangeModal()" [isExistFooter]="true" [defaultButton]="true" [newButton]="false">
+      
+<modal-header><h3>Modal Header</h3></modal-header>
+<Modal-content><p>content</p></Modal-content>
+ 
+<modal-content>
+<button class="ui red button" (click)="ngChangeModal()">Close</button>
+</modal-content>
+
+</app-modal>

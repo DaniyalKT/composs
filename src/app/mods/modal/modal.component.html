@@ -2,13 +2,17 @@
     <div class="ui modal visible active" (click)="$event.stopPropagation()">
         <i class="close icon" (click)="onCloseModal()"></i>
         <div class="header">
-           header
+           <ng-content select="modal-header"></ng-content>
+           
         </div>
         <div class="content">
-          content
+             <ng-content select="Modal-content"></ng-content>
+             
         </div>
-        <div class="actions actions-default">
-            <button class="ui button" (click)="onCloseModal()" >OK</button>
+        <div class="actions actions-default" *ngIf="isExistFooter">
+            <button class="ui button" (click)="onCloseModal()" *ngIf="defaultButton">OK</button>
+            <ng-content select="modal-content" *ngIf="newButton"></ng-content>
+            
         </div>
     </div>
 </div>

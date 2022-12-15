@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class ModulsHomeComponent {
    showModal: boolean = false
 
+
+
   ngChangeModal(){
     this.showModal = !this.showModal
   }
