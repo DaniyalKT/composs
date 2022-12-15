@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./moduls-home.component.css']
 })
 export class ModulsHomeComponent {
+   showModal: boolean = false
 
+  ngChangeModal(){
+    this.showModal = !this.showModal
+  }
 }
